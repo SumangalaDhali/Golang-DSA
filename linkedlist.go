@@ -13,13 +13,13 @@ type linkedlist struct {
 }
 
 func (l *linkedlist) pushlast(e int) {
-	newest := node{data: e}
+	newest := &node{data: e}
 	if l.head == nil {
-		l.head = &newest
+		l.head = newest
 	} else {
-		l.tail.next = &newest
+		l.tail.next = newest
 	}
-	l.tail = &newest
+	l.tail = newest
 }
 
 func (l *linkedlist) display() {
