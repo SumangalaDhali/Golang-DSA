@@ -51,4 +51,5 @@ func main() {
 	fmt.Println(e)
 	c.display()
 	fmt.Println(c.array)
+	c.top()
 }
